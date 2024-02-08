@@ -1,0 +1,163 @@
+{
+  "description": "",
+  "duration": 0,
+  "looping": false,
+  "masterVolume": 1,
+  "nodeTypeVersionNumbers": {
+    "ImpactForce": 1,
+    "Output": 4,
+    "ReplicateChannel": 2,
+    "WaveGen": 1
+  },
+  "nodes": [
+    {
+      "deviceTags": [
+        "Haptics"
+      ],
+      "disableSelfAndChildren": false,
+      "disableSelfOnly": false,
+      "dparams": [
+        {
+          "name": "Input",
+          "values": [
+            [
+              0,
+              "node_3",
+              0
+            ]
+          ]
+        }
+      ],
+      "editorPos": [
+        155.9998779296875,
+        -114
+      ],
+      "inputLabels": [],
+      "name": "node_1",
+      "numInputs": 1,
+      "numOutputs": 1,
+      "studioOnly": false,
+      "type": "Output"
+    },
+    {
+      "disableSelfAndChildren": false,
+      "disableSelfOnly": false,
+      "dparams": [
+        {
+          "name": "Frequency",
+          "values": [
+            [
+              170,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Amplitude",
+          "values": [
+            [
+              1,
+              "node_4",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Bias",
+          "values": [
+            [
+              0,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Phase",
+          "values": [
+            [
+              0,
+              "null",
+              0
+            ]
+          ]
+        }
+      ],
+      "editorPos": [
+        -442.0001220703125,
+        -175
+      ],
+      "name": "node_2",
+      "note": 21,
+      "numOutputs": 1,
+      "range": [
+        0,
+        0
+      ],
+      "type": "WaveGen",
+      "waveType": "Sine"
+    },
+    {
+      "disableSelfAndChildren": false,
+      "disableSelfOnly": false,
+      "dparams": [
+        {
+          "name": "Input",
+          "values": [
+            [
+              0,
+              "node_2",
+              0
+            ]
+          ]
+        }
+      ],
+      "editorPos": [
+        -151.0001220703125,
+        -97
+      ],
+      "name": "node_3",
+      "numOutputs": 1,
+      "type": "ReplicateChannel",
+      "useNumDeviceChannels": true
+    },
+    {
+      "disableSelfAndChildren": false,
+      "disableSelfOnly": false,
+      "dparams": [
+        {
+          "name": "Amplitude",
+          "values": [
+            [
+              1,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Duration",
+          "values": [
+            [
+              0.10000000149011612,
+              "null",
+              0
+            ]
+          ]
+        }
+      ],
+      "editorPos": [
+        -743.0001220703125,
+        -166
+      ],
+      "loop": false,
+      "name": "node_4",
+      "numOutputs": 1,
+      "stopEffectOnFinished": true,
+      "type": "ImpactForce"
+    }
+  ],
+  "tunables": [],
+  "version": 24
+}

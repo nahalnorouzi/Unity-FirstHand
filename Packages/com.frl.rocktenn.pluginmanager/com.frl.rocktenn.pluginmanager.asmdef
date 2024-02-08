@@ -1,0 +1,16 @@
+{
+    "name": "com.frl.rocktenn.pluginmanager",
+    "references": [
+        "com.frl.osiris.common"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "WSA"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

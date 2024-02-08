@@ -1,0 +1,4598 @@
+{
+  "effects": [
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "spatial_processing_data",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Spatialize1D"
+            ]
+          ],
+          "editorPos": [
+            1040,
+            462
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              0.80000001192092896,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            383,
+            294
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0.10000000149011612,
+              "null"
+            ],
+            [
+              0,
+              "Curve_28145"
+            ]
+          ],
+          "editorPos": [
+            696,
+            765
+          ],
+          "listenerMode": 0,
+          "name": "Spatialize1D",
+          "type": "Spatialize1D"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            266,
+            543
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_28145",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0.40000000596046448,
+              1
+            ],
+            [
+              0.40000000596046448,
+              0.40000000596046448
+            ],
+            [
+              0.89999997615814209,
+              0.40000000596046448
+            ],
+            [
+              1.5,
+              4
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "button",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Add"
+            ]
+          ],
+          "editorPos": [
+            1556,
+            615
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              100,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            408,
+            156
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 1
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            73,
+            186
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0.5
+            ],
+            [
+              0.05000000074505806,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": false,
+          "type": "Curve"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "Curve"
+            ]
+          ],
+          "editorPos": [
+            716,
+            400
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              0.89999997615814209,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            405,
+            657
+          ],
+          "name": "WaveGen_41",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen_41"
+            ],
+            [
+              0,
+              "Curve_26500"
+            ]
+          ],
+          "editorPos": [
+            716,
+            940
+          ],
+          "name": "Multiply_6334",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ],
+            [
+              0,
+              "Delay"
+            ]
+          ],
+          "editorPos": [
+            1264,
+            477
+          ],
+          "name": "Add",
+          "numInputs": 2,
+          "opType": 1,
+          "type": "Add"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            72,
+            715
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_26500",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0.89999997615814209
+            ],
+            [
+              0.05000000074505806,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply_6334"
+            ],
+            [
+              0.20000000298023224,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            990,
+            704
+          ],
+          "name": "Delay",
+          "type": "Delay"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "impact_resonance",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ]
+          ],
+          "editorPos": [
+            808,
+            441
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              0.80000001192092896,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            195,
+            268
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            129,
+            494
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0.80000001192092896
+            ],
+            [
+              0.10000000149011612,
+              0.20000000298023224
+            ],
+            [
+              0.89999997615814209,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "Curve"
+            ]
+          ],
+          "editorPos": [
+            525,
+            351
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "pinch",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ]
+          ],
+          "editorPos": [
+            792,
+            490
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              100,
+              "null"
+            ],
+            [
+              0.5,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            164,
+            244
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 4
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "Curve_19169"
+            ]
+          ],
+          "editorPos": [
+            514,
+            386
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            98,
+            512
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_19169",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0.039999999105930328,
+              0.89999997615814209
+            ],
+            [
+              0.039999999105930328,
+              0
+            ],
+            [
+              0.079999998211860657,
+              0
+            ],
+            [
+              0.079999998211860657,
+              0.80000001192092896
+            ],
+            [
+              0.11999999731779099,
+              0.69999998807907104
+            ],
+            [
+              0.11999999731779099,
+              0
+            ],
+            [
+              0.20000000298023224,
+              0
+            ],
+            [
+              0.20000000298023224,
+              0.60000002384185791
+            ],
+            [
+              0.23999999463558197,
+              0.5
+            ],
+            [
+              0.23999999463558197,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "touch",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ]
+          ],
+          "editorPos": [
+            996,
+            624
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              80,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            245,
+            394
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "Curve"
+            ]
+          ],
+          "editorPos": [
+            605,
+            553
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            190,
+            649
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0.69999998807907104
+            ],
+            [
+              0.039999999105930328,
+              0.10000000149011612
+            ],
+            [
+              0.20000000298023224,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "spatial_spin_fail",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Add"
+            ]
+          ],
+          "editorPos": [
+            1364,
+            614
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply_28145"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0.059999998658895493,
+              "null"
+            ],
+            [
+              0,
+              "Curve_18467"
+            ]
+          ],
+          "editorPos": [
+            775,
+            179
+          ],
+          "listenerMode": 0,
+          "name": "Spatialize1D",
+          "type": "Spatialize1D"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            24,
+            25
+          ],
+          "name": "WaveGen_11478",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            9,
+            240
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_16827",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0.80000001192092896
+            ],
+            [
+              0.059999998658895493,
+              0.80000001192092896
+            ],
+            [
+              0.059999998658895493,
+              0
+            ],
+            [
+              2,
+              0.89999997615814209
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2.0999991893768311,
+              0
+            ],
+            [
+              2.0999991893768311,
+              0.80000001192092896
+            ],
+            [
+              2.1466658115386963,
+              0.80000001192092896
+            ],
+            [
+              2.1466658115386963,
+              0
+            ],
+            [
+              2.2066657543182373,
+              0
+            ],
+            [
+              2.2066657543182373,
+              0.80000001192092896
+            ],
+            [
+              2.2599992752075195,
+              0.80000001192092896
+            ],
+            [
+              2.2599992752075195,
+              0
+            ],
+            [
+              2.35333251953125,
+              0
+            ],
+            [
+              2.35333251953125,
+              0.89999997615814209
+            ],
+            [
+              2.3933324813842773,
+              0.89999997615814209
+            ],
+            [
+              2.3933324813842773,
+              0
+            ],
+            [
+              2.533332347869873,
+              0
+            ],
+            [
+              2.533332347869873,
+              0.89999997615814209
+            ],
+            [
+              2.6266658306121826,
+              0.89999997615814209
+            ],
+            [
+              2.6333324909210205,
+              0
+            ],
+            [
+              2.8466658592224121,
+              0
+            ],
+            [
+              2.8466658592224121,
+              0.40000000596046448
+            ],
+            [
+              2.9933323860168457,
+              0.40000000596046448
+            ],
+            [
+              2.9933323860168457,
+              0
+            ],
+            [
+              3.1266658306121826,
+              0
+            ],
+            [
+              3.1266658306121826,
+              0.60000002384185791
+            ],
+            [
+              3.2599992752075195,
+              0.40000000596046448
+            ],
+            [
+              3.2599992752075195,
+              0
+            ],
+            [
+              3.3799991607666016,
+              0
+            ],
+            [
+              3.3799991607666016,
+              0.40000039339065552
+            ],
+            [
+              3.7933313846588135,
+              0.11999999731779099
+            ],
+            [
+              4.5,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen_11478"
+            ],
+            [
+              0,
+              "Curve_16827"
+            ],
+            [
+              3,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            409,
+            85
+          ],
+          "name": "Multiply_28145",
+          "numInputs": 3,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            395,
+            344
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_18467",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0.5,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1.5,
+              6
+            ],
+            [
+              2,
+              10
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4.5,
+              2
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Spatialize1D"
+            ],
+            [
+              0,
+              "Delay"
+            ]
+          ],
+          "editorPos": [
+            1107,
+            461
+          ],
+          "name": "Add",
+          "numInputs": 2,
+          "opType": 1,
+          "type": "Add"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ],
+            [
+              2,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            843,
+            782
+          ],
+          "name": "Delay",
+          "type": "Delay"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              2,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            43,
+            780
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "Curve_6334"
+            ]
+          ],
+          "editorPos": [
+            428,
+            926
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            38,
+            1004
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_6334",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0.0066666668280959129,
+              0.98666667938232422
+            ],
+            [
+              0.10333333164453506,
+              0.039999991655349731
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "texture     ",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ]
+          ],
+          "editorPos": [
+            1454,
+            478
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPos": [
+            543,
+            728
+          ],
+          "name": "Noise",
+          "noiseType": 1,
+          "type": "Noise"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Add"
+            ],
+            [
+              0,
+              "WaveGen_24464"
+            ]
+          ],
+          "editorPos": [
+            1183,
+            396
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Curve_18467"
+            ],
+            [
+              0.40000000596046448,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            457,
+            45
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            94,
+            85
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": true,
+          "name": "Curve_18467",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0.039999999105930328
+            ],
+            [
+              0.10000000149011612,
+              1
+            ],
+            [
+              0.20000000298023224,
+              0
+            ],
+            [
+              0.30000001192092896,
+              1
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": false,
+          "type": "Curve"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Curve_19169"
+            ],
+            [
+              0.20000000298023224,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            460,
+            274
+          ],
+          "name": "WaveGen_6334",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 4
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            92,
+            485
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": true,
+          "name": "Curve_19169",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              0.20000000298023224,
+              0
+            ],
+            [
+              0.40000000596046448,
+              1
+            ],
+            [
+              0.60000002384185791,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": false,
+          "type": "Curve"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Curve_29358"
+            ],
+            [
+              0.30000001192092896,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            465,
+            503
+          ],
+          "name": "WaveGen_11478",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 2
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            92,
+            883
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": true,
+          "name": "Curve_29358",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0.20000000298023224,
+              1
+            ],
+            [
+              0.20000000298023224,
+              0
+            ],
+            [
+              0.40000000596046448,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": false,
+          "type": "Curve"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "WaveGen_6334"
+            ],
+            [
+              0,
+              "WaveGen_11478"
+            ],
+            [
+              0,
+              "Noise"
+            ]
+          ],
+          "editorPos": [
+            823,
+            320
+          ],
+          "name": "Add",
+          "numInputs": 4,
+          "opType": 1,
+          "type": "Add"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              0.20000000298023224,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            860,
+            550
+          ],
+          "name": "WaveGen_24464",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "impact_heavy",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ]
+          ],
+          "editorPos": [
+            788,
+            520
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            189,
+            263
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 4
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            120,
+            503
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0.20000000298023224,
+              0.20000000298023224
+            ],
+            [
+              0.89999997615814209,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "Curve"
+            ]
+          ],
+          "editorPos": [
+            520,
+            399
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "spatial_enhanced_motion ",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Add"
+            ]
+          ],
+          "editorPos": [
+            1310,
+            631
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              0.5,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            375,
+            204
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0.20000000298023224,
+              "null"
+            ],
+            [
+              0,
+              "Curve"
+            ]
+          ],
+          "editorPos": [
+            697,
+            353
+          ],
+          "listenerMode": 0,
+          "name": "Spatialize1D",
+          "type": "Spatialize1D"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            35,
+            221
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": true,
+          "name": "Curve",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": false,
+          "type": "Curve"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen_18467"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0.019999999552965164,
+              "null"
+            ],
+            [
+              0,
+              "Curve_41"
+            ]
+          ],
+          "editorPos": [
+            696,
+            784
+          ],
+          "listenerMode": 0,
+          "name": "Spatialize1D_41",
+          "type": "Spatialize1D"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Spatialize1D"
+            ],
+            [
+              0,
+              "Spatialize1D_41"
+            ]
+          ],
+          "editorPos": [
+            1035,
+            550
+          ],
+          "name": "Add",
+          "numInputs": 2,
+          "opType": 1,
+          "type": "Add"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              0.80000001192092896,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            394,
+            622
+          ],
+          "name": "WaveGen_18467",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            36,
+            655
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": true,
+          "name": "Curve_41",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": false,
+          "type": "Curve"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "spatial_turnright ",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            114,
+            206
+          ],
+          "name": "WaveGen_6334",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Spatialize1D_15724"
+            ]
+          ],
+          "editorPos": [
+            1105,
+            713
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output_26500",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            54,
+            449
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_19169",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              0.30000001192092896,
+              0.99999970197677612
+            ],
+            [
+              0.30000001192092896,
+              0
+            ],
+            [
+              0.40000000596046448,
+              0
+            ],
+            [
+              0.40000000596046448,
+              1
+            ],
+            [
+              0.69999998807907104,
+              1
+            ],
+            [
+              0.69999998807907104,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1.2000000476837158
+            ],
+            [
+              1.1000000238418579,
+              1.2000000476837158
+            ],
+            [
+              1.1000000238418579,
+              0
+            ],
+            [
+              1.2000000476837158,
+              0
+            ],
+            [
+              1.2000000476837158,
+              1.2000000476837158
+            ],
+            [
+              1.2999999523162842,
+              1.2000000476837158
+            ],
+            [
+              1.2999999523162842,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen_6334"
+            ],
+            [
+              0,
+              "Curve_19169"
+            ]
+          ],
+          "editorPos": [
+            427,
+            369
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0.11999999731779099,
+              "null"
+            ],
+            [
+              0,
+              "Curve_11478"
+            ]
+          ],
+          "editorPos": [
+            758,
+            470
+          ],
+          "listenerMode": 0,
+          "name": "Spatialize1D_15724",
+          "type": "Spatialize1D"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            384,
+            826
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_11478",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0.30000001192092896,
+              1
+            ],
+            [
+              0.30000001192092896,
+              0
+            ],
+            [
+              0.40000000596046448,
+              0
+            ],
+            [
+              0.69999998807907104,
+              1
+            ],
+            [
+              0.69999998807907104,
+              0.6600000262260437
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": false,
+          "type": "Curve"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "spatial_turnleft",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            195,
+            250
+          ],
+          "name": "WaveGen_6334",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Spatialize1D_15724"
+            ]
+          ],
+          "editorPos": [
+            1227,
+            642
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output_26500",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            157,
+            530
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_19169",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              0.30000001192092896,
+              0.99999970197677612
+            ],
+            [
+              0.30000001192092896,
+              0
+            ],
+            [
+              0.40000000596046448,
+              0
+            ],
+            [
+              0.40000000596046448,
+              1
+            ],
+            [
+              0.69999998807907104,
+              1
+            ],
+            [
+              0.69999998807907104,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1.2000000476837158
+            ],
+            [
+              1.1000000238418579,
+              1.2000000476837158
+            ],
+            [
+              1.1000000238418579,
+              0
+            ],
+            [
+              1.2000000476837158,
+              0
+            ],
+            [
+              1.2000000476837158,
+              1.2000000476837158
+            ],
+            [
+              1.2999999523162842,
+              1.2000000476837158
+            ],
+            [
+              1.2999999523162842,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen_6334"
+            ],
+            [
+              0,
+              "Curve_19169"
+            ]
+          ],
+          "editorPos": [
+            608,
+            341
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0.11999999731779099,
+              "null"
+            ],
+            [
+              0,
+              "Curve_11478"
+            ]
+          ],
+          "editorPos": [
+            873,
+            477
+          ],
+          "listenerMode": 0,
+          "name": "Spatialize1D_15724",
+          "type": "Spatialize1D"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            510,
+            803
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_11478",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0.30000001192092896,
+              0
+            ],
+            [
+              0.40000000596046448,
+              0
+            ],
+            [
+              0.40000000596046448,
+              1
+            ],
+            [
+              0.69999998807907104,
+              0.33000001311302185
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": false,
+          "type": "Curve"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "notification",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ]
+          ],
+          "editorPos": [
+            871,
+            489
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              0.80000001192092896,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            199,
+            210
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            148,
+            523
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0.10000000149011612,
+              0.5
+            ],
+            [
+              0.20000000298023224,
+              0
+            ],
+            [
+              0.30000001192092896,
+              0.5
+            ],
+            [
+              0.40000000596046448,
+              0
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.60000002384185791,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "Curve"
+            ]
+          ],
+          "editorPos": [
+            562,
+            375
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "spatial_scrollwheel",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Spatialize1D"
+            ]
+          ],
+          "editorPos": [
+            1376,
+            617
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              0.80000001192092896,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            448,
+            317
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            64,
+            347
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              8,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0.019999999552965164,
+              "null"
+            ],
+            [
+              0,
+              "Remap"
+            ]
+          ],
+          "editorPos": [
+            1031,
+            468
+          ],
+          "listenerMode": 0,
+          "name": "Spatialize1D",
+          "type": "Spatialize1D"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Curve"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            448,
+            640
+          ],
+          "name": "WaveGen_41",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 2
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen_41"
+            ],
+            [
+              -1,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            757,
+            808
+          ],
+          "name": "Remap",
+          "type": "Remap"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "VT_TEST",
+      "nodes": [
+        {
+          "disableSelfAndChildren": true,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "ChannelVolumeAdjust"
+            ]
+          ],
+          "editorPos": [
+            1099,
+            158
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            49,
+            72
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0.80000001192092896,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0.80000001192092896,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            700,
+            230
+          ],
+          "name": "ChannelVolumeAdjust",
+          "numChannels": 6,
+          "type": "ChannelVolumeAdjust"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            25,
+            349
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": true,
+          "name": "Curve",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0.20000000298023224,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "Curve"
+            ]
+          ],
+          "editorPos": [
+            403,
+            175
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            388,
+            759
+          ],
+          "name": "WaveGen_41",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            326,
+            1014
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": true,
+          "name": "Curve_18467",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0.20000000298023224,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "ChannelVolumeAdjust_41"
+            ]
+          ],
+          "editorPos": [
+            1497,
+            942
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output_26500",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen_41"
+            ],
+            [
+              0.090000003576278687,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "Curve_18467"
+            ]
+          ],
+          "editorPos": [
+            734,
+            961
+          ],
+          "listenerMode": 0,
+          "name": "Spatialize1D",
+          "type": "Spatialize1D"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Spatialize1D"
+            ],
+            [
+              0.60000002384185791,
+              "null"
+            ],
+            [
+              0.80000001192092896,
+              "null"
+            ],
+            [
+              0.60000002384185791,
+              "null"
+            ],
+            [
+              0.80000001192092896,
+              "null"
+            ],
+            [
+              0.60000002384185791,
+              "null"
+            ],
+            [
+              0.60000002384185791,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            1082,
+            715
+          ],
+          "name": "ChannelVolumeAdjust_41",
+          "numChannels": 6,
+          "type": "ChannelVolumeAdjust"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "spatial_activation",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Add"
+            ]
+          ],
+          "editorPos": [
+            1875,
+            537
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            35,
+            158
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              8
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Curve"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            390,
+            389
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 4
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              -1,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            694,
+            260
+          ],
+          "name": "Remap",
+          "type": "Remap"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen_6334"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0.079999998211860657,
+              "null"
+            ],
+            [
+              0,
+              "Remap"
+            ]
+          ],
+          "editorPos": [
+            968,
+            105
+          ],
+          "listenerMode": 0,
+          "name": "Spatialize1D",
+          "type": "Spatialize1D"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Spatialize1D"
+            ],
+            [
+              0,
+              "Curve_26500"
+            ]
+          ],
+          "editorPos": [
+            1319,
+            339
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              0.5,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            388,
+            143
+          ],
+          "name": "WaveGen_6334",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 1
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            950,
+            338
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_26500",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            37,
+            744
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_19169",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              2.2000000476837158,
+              0
+            ],
+            [
+              2.2000000476837158,
+              0.80000001192092896
+            ],
+            [
+              2.2999999523162842,
+              0.80000001192092896
+            ],
+            [
+              2.2999999523162842,
+              0
+            ],
+            [
+              2.4000000953674316,
+              0
+            ],
+            [
+              2.4000000953674316,
+              0.5
+            ],
+            [
+              2.5,
+              0.5
+            ],
+            [
+              2.5,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            383,
+            724
+          ],
+          "name": "WaveGen_15724",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen_15724"
+            ],
+            [
+              0,
+              "Curve_19169"
+            ]
+          ],
+          "editorPos": [
+            732,
+            834
+          ],
+          "name": "Multiply_29358",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Curve_15724"
+            ],
+            [
+              -1,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            734,
+            1015
+          ],
+          "name": "Remap_26962",
+          "type": "Remap"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply_29358"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "Remap_26962"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            1001,
+            901
+          ],
+          "listenerMode": 0,
+          "name": "Spatialize1D_24464",
+          "type": "Spatialize1D"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ],
+            [
+              0,
+              "Spatialize1D_24464"
+            ]
+          ],
+          "editorPos": [
+            1595,
+            683
+          ],
+          "name": "Add",
+          "numInputs": 2,
+          "opType": 1,
+          "type": "Add"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            371,
+            988
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_15724",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              2.2000000476837158,
+              0
+            ],
+            [
+              2.2000000476837158,
+              0.80000001192092896
+            ],
+            [
+              2.2999999523162842,
+              0.80000001192092896
+            ],
+            [
+              2.2999999523162842,
+              0
+            ],
+            [
+              2.4000000953674316,
+              0
+            ],
+            [
+              2.4000000953674316,
+              0.5
+            ],
+            [
+              2.5,
+              0.5
+            ],
+            [
+              2.5,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "laser_gun",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Add"
+            ]
+          ],
+          "editorPos": [
+            1552,
+            680
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            73,
+            162
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": false,
+          "type": "Curve"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              0.5,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            429,
+            144
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "Curve"
+            ]
+          ],
+          "editorPos": [
+            747,
+            399
+          ],
+          "name": "Multiply",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply"
+            ],
+            [
+              0,
+              "Delay"
+            ]
+          ],
+          "editorPos": [
+            1280,
+            539
+          ],
+          "name": "Add",
+          "numInputs": 2,
+          "opType": 1,
+          "type": "Add"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              0.5,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            439,
+            649
+          ],
+          "name": "WaveGen_6334",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            77,
+            662
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": false,
+          "name": "Curve_26500",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0.10000000149011612,
+              1
+            ],
+            [
+              0.5,
+              0
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        },
+        {
+          "applyBToPitchAdjust": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen_6334"
+            ],
+            [
+              0,
+              "Curve_26500"
+            ]
+          ],
+          "editorPos": [
+            754,
+            946
+          ],
+          "name": "Multiply_19169",
+          "numInputs": 2,
+          "opType": 0,
+          "type": "Multiply"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Multiply_19169"
+            ],
+            [
+              1.2000000476837158,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            1016,
+            785
+          ],
+          "name": "Delay",
+          "type": "Delay"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "spatial_backandforth",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Spatialize1D"
+            ]
+          ],
+          "editorPos": [
+            1408,
+            450
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0.11999999731779099,
+              "null"
+            ],
+            [
+              0,
+              "Remap"
+            ]
+          ],
+          "editorPos": [
+            1054,
+            508
+          ],
+          "listenerMode": 0,
+          "name": "Spatialize1D",
+          "type": "Spatialize1D"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              170,
+              "null"
+            ],
+            [
+              0.80000001192092896,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            747,
+            238
+          ],
+          "name": "WaveGen",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "WaveGen_15724"
+            ],
+            [
+              -1,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              1,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            778,
+            879
+          ],
+          "name": "Remap",
+          "type": "Remap"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "Curve"
+            ],
+            [
+              1,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ],
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            465,
+            588
+          ],
+          "name": "WaveGen_15724",
+          "note": 21,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 4
+        },
+        {
+          "beginAtFirstValueWhenStarting": false,
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [],
+          "editorPlotView": [
+            70,
+            153,
+            541,
+            -127.5
+          ],
+          "editorPos": [
+            76,
+            342
+          ],
+          "enableTValueOverride": false,
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "loop": true,
+          "name": "Curve",
+          "nodePlotView": [
+            30,
+            37.5,
+            240,
+            -31
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "retainFinalValueOnFinished": true,
+          "stopEffectOnFinished": true,
+          "type": "Curve"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "banjo_wav",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "RawData"
+            ]
+          ],
+          "editorPos": [
+            1,
+            1
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "Output",
+          "nameMustContainStrings": [],
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "null"
+            ]
+          ],
+          "editorPos": [
+            -546.00006103515625,
+            36.5
+          ],
+          "loop": false,
+          "name": "RawData",
+          "sourceFilePath": "Content\\banjo.wav",
+          "stopEffectOnFinished": true,
+          "type": "RawData"
+        }
+      ]
+    }
+  ],
+  "version": 8
+}

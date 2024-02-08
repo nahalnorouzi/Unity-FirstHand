@@ -1,0 +1,306 @@
+{
+  "description": "",
+  "duration": 0,
+  "looping": false,
+  "masterVolume": 1,
+  "nodeTypeVersionNumbers": {
+    "ExponentialDecay": 1,
+    "Output": 4,
+    "Remap": 1,
+    "WaveGen": 1
+  },
+  "nodes": [
+    {
+      "deviceTags": [],
+      "disableSelfAndChildren": false,
+      "disableSelfOnly": false,
+      "dparams": [
+        {
+          "name": "Input",
+          "values": [
+            [
+              0,
+              "node_4",
+              0
+            ]
+          ]
+        }
+      ],
+      "editorPos": [
+        -17,
+        -27
+      ],
+      "inputLabels": [],
+      "name": "node_1",
+      "numInputs": 1,
+      "numOutputs": 1,
+      "studioOnly": false,
+      "type": "Output"
+    },
+    {
+      "disableSelfAndChildren": false,
+      "disableSelfOnly": false,
+      "dparams": [
+        {
+          "name": "Frequency",
+          "values": [
+            [
+              891.666015625,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Amplitude",
+          "values": [
+            [
+              1,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Bias",
+          "values": [
+            [
+              0,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Phase",
+          "values": [
+            [
+              0,
+              "null",
+              0
+            ]
+          ]
+        }
+      ],
+      "editorPos": [
+        -1258,
+        63
+      ],
+      "name": "node_3",
+      "note": 21,
+      "numOutputs": 1,
+      "range": [
+        0,
+        0
+      ],
+      "type": "WaveGen",
+      "waveType": "Sine"
+    },
+    {
+      "disableSelfAndChildren": false,
+      "disableSelfOnly": false,
+      "dparams": [
+        {
+          "name": "Frequency",
+          "values": [
+            [
+              440,
+              "node_5",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Amplitude",
+          "values": [
+            [
+              1,
+              "node_6",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Bias",
+          "values": [
+            [
+              0,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Phase",
+          "values": [
+            [
+              0,
+              "null",
+              0
+            ]
+          ]
+        }
+      ],
+      "editorPos": [
+        -417,
+        -27
+      ],
+      "name": "node_4",
+      "note": 21,
+      "numOutputs": 1,
+      "range": [
+        0,
+        0
+      ],
+      "type": "WaveGen",
+      "waveType": "Sine"
+    },
+    {
+      "disableSelfAndChildren": false,
+      "disableSelfOnly": false,
+      "dparams": [
+        {
+          "name": "Input",
+          "values": [
+            [
+              0,
+              "node_3",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "TargetMin",
+          "values": [
+            [
+              440,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "SourceMin",
+          "values": [
+            [
+              -1,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "TargetMax",
+          "values": [
+            [
+              5000,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "SourceMax",
+          "values": [
+            [
+              1,
+              "null",
+              0
+            ]
+          ]
+        }
+      ],
+      "editorPos": [
+        -817,
+        -227
+      ],
+      "name": "node_5",
+      "numOutputs": 1,
+      "type": "Remap"
+    },
+    {
+      "disableSelfAndChildren": false,
+      "disableSelfOnly": false,
+      "dparams": [
+        {
+          "name": "MinAmplitude",
+          "values": [
+            [
+              0.0099999997764825821,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Base",
+          "values": [
+            [
+              2.7182800769805908,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Rate",
+          "values": [
+            [
+              9.2103462219238281,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "InitialDelay",
+          "values": [
+            [
+              0,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "DecayDuration",
+          "values": [
+            [
+              0.5,
+              "null",
+              0
+            ]
+          ]
+        }
+      ],
+      "durationType": "RateFromDuration",
+      "editorPos": [
+        -817,
+        173
+      ],
+      "extentsAdditionalPoint0": [
+        0,
+        0
+      ],
+      "extentsAdditionalPoint1": [
+        0,
+        1
+      ],
+      "gridSpacingT_int": 1,
+      "gridSpacingV_int": 1,
+      "loop": false,
+      "name": "node_6",
+      "nodePlotView": [
+        13.6363525390625,
+        95.454544067382812,
+        564.26312255859375,
+        -90.909088134765625
+      ],
+      "numOutputs": 1,
+      "stopEffectOnFinished": true,
+      "type": "ExponentialDecay"
+    }
+  ],
+  "tunables": [],
+  "version": 24
+}

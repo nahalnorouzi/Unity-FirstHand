@@ -1,0 +1,10 @@
+{
+    "name": "com.frl.rocktenn.pluginmanager",
+    "displayName": "[Rocktenn] PluginManager",
+    "version": "0.0.12",
+    "unity": "2019.1",
+    "description": "PluginManager for dynamically loading rocktenn plugins",
+    "dependencies": {
+        "com.frl.osiris.common": "0.0.12"
+    }
+}

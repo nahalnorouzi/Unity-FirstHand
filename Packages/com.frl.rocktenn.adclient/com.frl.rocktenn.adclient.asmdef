@@ -1,0 +1,17 @@
+{
+    "name": "com.frl.rocktenn.adclient",
+    "references": [
+        "com.frl.osiris.common",
+        "com.frl.rocktenn.pluginmanager"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "WSA"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

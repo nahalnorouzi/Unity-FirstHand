@@ -1,0 +1,212 @@
+{
+  "description": "My Description",
+  "duration": 0,
+  "looping": false,
+  "masterVolume": 0.82666802406311035,
+  "nodeTypeVersionNumbers": {
+    "ADSR": 1,
+    "Output": 4,
+    "WaveGen": 1
+  },
+  "nodes": [
+    {
+      "deviceTags": [],
+      "disableSelfAndChildren": false,
+      "disableSelfOnly": false,
+      "dparams": [
+        {
+          "name": "Input",
+          "values": [
+            [
+              0,
+              "node_1",
+              0
+            ]
+          ]
+        }
+      ],
+      "editorPos": [
+        -256,
+        143.00839233398438
+      ],
+      "inputLabels": [],
+      "name": "Output",
+      "numInputs": 1,
+      "numOutputs": 1,
+      "studioOnly": false,
+      "type": "Output"
+    },
+    {
+      "disableSelfAndChildren": false,
+      "disableSelfOnly": false,
+      "dparams": [
+        {
+          "name": "Frequency",
+          "values": [
+            [
+              1661.219970703125,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Amplitude",
+          "values": [
+            [
+              1,
+              "node_2",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Bias",
+          "values": [
+            [
+              0,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "Phase",
+          "values": [
+            [
+              0,
+              "null",
+              0
+            ]
+          ]
+        }
+      ],
+      "editorPos": [
+        -656,
+        143.00839233398438
+      ],
+      "name": "node_1",
+      "note": 21,
+      "numOutputs": 1,
+      "range": [
+        0,
+        0
+      ],
+      "type": "WaveGen",
+      "waveType": "Sine"
+    },
+    {
+      "disableSelfAndChildren": false,
+      "disableSelfOnly": false,
+      "dparams": [
+        {
+          "name": "ReleaseDuration",
+          "values": [
+            [
+              0.10000000149011612,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "AttackAmplitude",
+          "values": [
+            [
+              1,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "InitialDelay",
+          "values": [
+            [
+              0,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "DecayDuration",
+          "values": [
+            [
+              0.0099999997764825821,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "AttackDuration",
+          "values": [
+            [
+              0.05000000074505806,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "FinalDelay",
+          "values": [
+            [
+              0,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "SustainDuration",
+          "values": [
+            [
+              0.10000000149011612,
+              "null",
+              0
+            ]
+          ]
+        },
+        {
+          "name": "SustainAmplitude",
+          "values": [
+            [
+              0.5,
+              "null",
+              0
+            ]
+          ]
+        }
+      ],
+      "editorPos": [
+        -1056,
+        143.00839233398438
+      ],
+      "extentsAdditionalPoint0": [
+        0,
+        0
+      ],
+      "extentsAdditionalPoint1": [
+        0,
+        1
+      ],
+      "gridSpacingT_int": 1,
+      "gridSpacingV_int": 1,
+      "loop": false,
+      "name": "node_2",
+      "nodePlotView": [
+        13.636367797851562,
+        95.454544067382812,
+        1048.9510498046875,
+        -90.909088134765625
+      ],
+      "numOutputs": 1,
+      "stopEffectOnFinished": true,
+      "type": "ADSR"
+    }
+  ],
+  "tunables": [],
+  "version": 24
+}

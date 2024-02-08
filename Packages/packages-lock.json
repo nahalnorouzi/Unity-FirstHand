@@ -7,6 +7,38 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.frl.osiris.common": {
+      "version": "file:com.frl.osiris.common",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.frl.rocktenn.adclient": {
+      "version": "file:com.frl.rocktenn.adclient",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.frl.osiris.common": "0.0.11",
+        "com.frl.rocktenn.pluginmanager": "0.0.12"
+      }
+    },
+    "com.frl.rocktenn.pluginmanager": {
+      "version": "file:com.frl.rocktenn.pluginmanager",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.frl.osiris.common": "0.0.12"
+      }
+    },
+    "com.frl.rocktenn.vtfx": {
+      "version": "file:com.frl.rocktenn.vtfx",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.frl.osiris.common": "0.1.0",
+        "com.frl.rocktenn.pluginmanager": "0.0.12"
+      }
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,

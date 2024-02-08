@@ -1,0 +1,11 @@
+{
+    "name": "com.frl.rocktenn.vtfx",
+    "displayName": "[Rocktenn] VTFX",
+    "version": "0.1.0",
+    "unity": "2019.1",
+    "description": "Vtfx for audio and haptic signal generation",
+    "dependencies": {
+        "com.frl.osiris.common": "0.1.0",
+        "com.frl.rocktenn.pluginmanager": "0.0.12"
+    }
+}

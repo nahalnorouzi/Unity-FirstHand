@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ClockTower.unity
+    path: Assets/Project/Scenes/ClockTowerGVE.unity
     guid: 33c6a0417d892db41b2deff022840328
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: eb30e76973cd50b43a00d9e49824b7e9, type: 2}

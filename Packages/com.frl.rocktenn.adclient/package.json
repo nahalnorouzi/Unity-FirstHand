@@ -1,0 +1,11 @@
+{
+    "name": "com.frl.rocktenn.adclient",
+    "displayName": "[Rocktenn] ADClient",
+    "version": "0.0.5",
+    "unity": "2019.1",
+    "description": "ADClient for communicating with ADServer",
+    "dependencies": {
+        "com.frl.osiris.common": "0.0.11",
+        "com.frl.rocktenn.pluginmanager": "0.0.12"
+    }
+}

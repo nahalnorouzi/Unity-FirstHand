@@ -1,0 +1,466 @@
+{
+  "effects": [
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "CubeArrayEffect",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "node_2",
+              0
+            ]
+          ],
+          "editorPos": [
+            -199,
+            17
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "node_1",
+          "nameMustContainStrings": [
+            "CubeArrayDevice"
+          ],
+          "numOutputs": 1,
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              1,
+              "null",
+              0
+            ],
+            [
+              0,
+              "null",
+              0
+            ],
+            [
+              0.20000000298023224,
+              "null",
+              0
+            ],
+            [
+              0,
+              "node_3",
+              0
+            ]
+          ],
+          "editorPos": [
+            -599,
+            17
+          ],
+          "explicitNumOutputChannels": 1,
+          "listenerMode": 0,
+          "name": "node_2",
+          "numOutputs": 1,
+          "type": "Spatialize1D",
+          "useNumDeviceChannels": true
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0.5,
+              "null",
+              0
+            ],
+            [
+              0.5,
+              "null",
+              0
+            ],
+            [
+              0.5,
+              "null",
+              0
+            ],
+            [
+              0,
+              "null",
+              0
+            ]
+          ],
+          "editorPos": [
+            -999,
+            17
+          ],
+          "name": "node_3",
+          "note": 21,
+          "numOutputs": 1,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "CubeEffect",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "node_5",
+              0
+            ]
+          ],
+          "editorPos": [
+            -100,
+            213
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "node_1",
+          "nameMustContainStrings": [
+            "CubeDevice"
+          ],
+          "numOutputs": 1,
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "null",
+              0
+            ],
+            [
+              0.25,
+              "null",
+              0
+            ],
+            [
+              1,
+              "null",
+              0
+            ],
+            [
+              0.125,
+              "null",
+              0
+            ],
+            [
+              0.5,
+              "null",
+              0
+            ],
+            [
+              0.5,
+              "null",
+              0
+            ],
+            [
+              0.125,
+              "null",
+              0
+            ],
+            [
+              0,
+              "null",
+              0
+            ]
+          ],
+          "editorPos": [
+            -1061.60009765625,
+            63
+          ],
+          "extentsAdditionalPoint0": [
+            0,
+            0
+          ],
+          "extentsAdditionalPoint1": [
+            0,
+            1
+          ],
+          "gridSpacingT_int": 1,
+          "gridSpacingV_int": 1,
+          "loop": false,
+          "name": "node_2",
+          "nodePlotView": [
+            22.916671752929688,
+            68.75,
+            229.16665649414063,
+            -62.499996185302734
+          ],
+          "numOutputs": 1,
+          "stopEffectOnFinished": true,
+          "type": "ADSR"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "node_2",
+              0
+            ],
+            [
+              0,
+              "node_6",
+              0
+            ]
+          ],
+          "editorPos": [
+            -445.60009765625,
+            108
+          ],
+          "name": "node_5",
+          "numInputs": 2,
+          "numOutputs": 1,
+          "type": "StackChannels"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "node_2",
+              0
+            ],
+            [
+              1,
+              "null",
+              0
+            ]
+          ],
+          "editorPos": [
+            -622.60009765625,
+            364
+          ],
+          "name": "node_6",
+          "numOutputs": 1,
+          "type": "Delay"
+        }
+      ]
+    },
+    {
+      "description": "",
+      "duration": 0,
+      "looping": false,
+      "masterVolume": 1,
+      "name": "SpatialCubeEffect",
+      "nodes": [
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              440,
+              "null",
+              0
+            ],
+            [
+              1,
+              "node_5",
+              0
+            ],
+            [
+              0,
+              "null",
+              0
+            ],
+            [
+              0,
+              "null",
+              0
+            ]
+          ],
+          "editorPos": [
+            -1348.60009765625,
+            -41
+          ],
+          "name": "node_2",
+          "note": 21,
+          "numOutputs": 1,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "node_4",
+              0
+            ]
+          ],
+          "editorPos": [
+            -570.60009765625,
+            -206
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "node_3",
+          "nameMustContainStrings": [
+            "SpatialCubeAudioDevice"
+          ],
+          "numOutputs": 1,
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "node_2",
+              0
+            ]
+          ],
+          "editorPos": [
+            -950.60009765625,
+            30
+          ],
+          "name": "node_4",
+          "numOutputs": 1,
+          "type": "ReplicateChannel",
+          "useNumDeviceChannels": true
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              5,
+              "null",
+              0
+            ],
+            [
+              1,
+              "null",
+              0
+            ],
+            [
+              0,
+              "null",
+              0
+            ],
+            [
+              0,
+              "null",
+              0
+            ]
+          ],
+          "editorPos": [
+            -1810.60009765625,
+            128
+          ],
+          "name": "node_5",
+          "note": 21,
+          "numOutputs": 1,
+          "range": [
+            0,
+            0
+          ],
+          "type": "WaveGen",
+          "waveType": 0
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "node_7",
+              0
+            ]
+          ],
+          "editorPos": [
+            -730.60009765625,
+            314
+          ],
+          "handedness": -1,
+          "mustBeAudio": false,
+          "mustNotBeAudio": false,
+          "name": "node_6",
+          "nameMustContainStrings": [
+            "SpatialCubeGraphicsDevice"
+          ],
+          "numOutputs": 1,
+          "type": "Output"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "node_8",
+              0
+            ],
+            [
+              0.5,
+              "null",
+              0
+            ]
+          ],
+          "editorPos": [
+            -1144.60009765625,
+            356
+          ],
+          "name": "node_7",
+          "numInputs": 2,
+          "numOutputs": 1,
+          "type": "Add"
+        },
+        {
+          "disableSelfAndChildren": false,
+          "disableSelfOnly": false,
+          "dparams": [
+            [
+              0,
+              "node_5",
+              0
+            ],
+            [
+              0.5,
+              "null",
+              0
+            ]
+          ],
+          "editorPos": [
+            -1488.60009765625,
+            271
+          ],
+          "name": "node_8",
+          "numInputs": 2,
+          "numOutputs": 1,
+          "type": "Multiply"
+        }
+      ]
+    }
+  ],
+  "version": 17
+}
